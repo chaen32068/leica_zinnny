@@ -1,0 +1,397 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+html, body {overflow-x: hidden; width: 100%; height: 100%; }
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #000;
+	background: #000;
+}
+
+
+/*scrollbar redesign*/
+::-webkit-scrollbar {width: 15px;}
+::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 3px #ccc;
+}
+::-webkit-scrollbar-thumb {
+   background: rgb(227,6,16);
+   border-radius: 10px;
+}
+/*::-webkit-scrollbar-thumb:hover {background: rgb(200,0,16);}*/
+
+
+/*top*/
+.top {
+	width: 100%; 
+	font-weight: bold;
+	background: #151515;
+	border-bottom: 1px solid rgb(48,48,48);
+}
+.top .inner {
+	width: 1200px;
+	height: 38px;
+	margin: 0 auto;
+	font-size: 13px;
+	line-height: 3.0;
+	color: rgb(132,132,132);
+	background: #151515;
+}
+.top .left {
+	float: left;
+	height: 38px;
+	box-sizing: border-box;
+}
+.top .left a {
+}
+.top .right {
+	float: right;
+}
+.top .right li {
+	float: left;
+	padding: 0 10px;
+}
+.top .right li:nth-child(4) {
+	position: relative;
+	width: 120px;
+	height: 30px;
+	margin-top: 3px;
+	padding-left: 5px;
+	text-align: center;
+	line-height: 2.5;
+	color: #fff;
+	border: 1px solid rgb(227,6,16);
+	border-radius: 3px;
+	background: rgb(227,6,16);
+	transition: all 0.4s;
+}
+.top .right li:nth-child(2):before {
+	content: url(../img/ico_kor_16x11.png);
+}
+.top .right li:nth-child(3):before {
+	content: url(../img/ico_account_gr_13x12.png);
+}
+.top .right li:nth-child(4):before {
+	content: url(../img/ico_cart_wt_12x12.png);
+	position: absolute;
+	top: 0;
+	right: 13px;
+	opacity: 0;
+	transition: all 0.4s;
+}
+.top .right li:nth-child(4):hover {
+	width: 130px;
+}
+.top .right li:nth-child(4):hover:before {
+	right: 10px;
+	opacity: 1;
+}
+
+
+/*header*/
+header {
+	position: relative;
+	width: 100%; 
+	border-bottom: 1px solid rgb(48,48,48);
+	color: #fff;
+	z-index: 100;
+}
+header:hover {background: #000;}
+header .inner {
+}
+header .inner_box {
+	height: 80px;
+	transition: all 0.6s;
+	width: 1200px;
+	margin: 0 auto;
+}
+header .logo {
+	float: left;
+	padding: 15px 0;
+}
+header .gnb { 
+	float: left;
+	display: inline-block;
+	width:700px;
+	height: 80px;
+	margin-left: 50px;
+	line-height: 6;
+	transition: all 0.5s;
+}
+header .gnb .title a {
+	float: left;
+	margin: 0 10px;
+	font-size: 14px;
+	transition: all 0.3s;
+}
+header .gnb .title a:hover {
+	color: rgb(227,6,16);
+}
+header .gnb .sub-menu {
+	position: absolute;
+	top: 84px; 
+	left: 0;
+	right: 0;
+	height: 0;
+	background: #000;
+	overflow: hidden;
+	box-sizing: border-box;
+	transition: height 0.3s;
+	z-index: 999;
+}
+header .gnb .sub-menu li {
+	margin-left: 23.5%;
+}
+header .gnb .sub-menu li a {
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0 10px;
+}
+header .gnb li:hover .sub-menu {
+	height: 80px;
+}
+header .inner:hover .gnb {
+	display: block;
+}
+header .gnb .sub-menu li:hover {
+	color: rgb(227,6,16);
+}
+header .cart {
+	position: absolute; 
+	top: 35px; right: 365px;
+	width: 20px; 
+	height: 20px;
+}
+header .cart span {
+	position: absolute;
+	bottom: 7px;
+	left: 13px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	font-size: 12px;
+	color: rgb(255,255,255);
+	line-height: 17px;
+	text-align: center;
+	background-color: rgb(227,6,16);
+	border-radius: 50%;
+}
+
+
+/*main*/
+.headr_area {
+	overflow: hidden;
+	width: 100%;
+	height: 950px;
+	background: url(../img/info_main01.png) no-repeat left top / contain;
+}
+.headr_area {
+	overflow: hidden;
+	position: relative;
+}
+.headr_area .inner {
+	
+}
+.main .txt {
+	position: absolute;
+	left: 26.5%;
+	bottom: 12%;
+	text-align: center;
+	line-height: 1.3;
+	color: #fff;
+}
+.main .txt span {
+	display: block;
+	padding: 20px 0;
+	font-weight: 700;
+}
+.main .txt h2 {
+	font-size: 58px;
+	font-weight: 700;
+}
+.main .txt p {
+	margin-top: 90px;
+	font-size: 24px;
+	line-height: 1.3;
+	color: #666;
+}
+
+
+/*contents*/
+.contents {
+	width: 100%;
+}
+.contents .inner {
+	width: 1200px;
+	height: 790px;
+	margin: 0 auto;
+}
+.contents li {
+	width: 580px;
+	border-bottom: 1px solid #666;
+	/*border가 바깥으로 나가있소*/
+}
+.contents .left {
+	float: left;
+}
+.contents .right {
+	float: right;
+}
+.contents .text {
+	margin: 40px;
+	height: 300px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.contents .text span {
+	color: #fff;
+}
+.contents .text p {
+	margin-top: 30px;
+	color: #666;
+}
+
+
+/*img_area*/
+.img_area {
+	width: 100%;
+	margin-top: 100px;
+}
+.img_area .inner {
+	width: 1200px;
+	margin: 0 auto;
+}
+.img_area .inner img {
+	display: block;
+}
+.img_area .inner .text {
+	padding-top: 100px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.img_area .inner .text p {
+	font-size: 24px;
+	text-align: center;
+	color: #666;
+}
+
+
+/*contents*/
+.value {
+	width: 100%;
+}
+.value .inner {
+	position: relative;
+	width: 1200px;
+	height: 435px;
+	margin: 100px auto;
+}
+.value .img_box {
+	float: left;
+}
+.value .txt {
+	overflow: hidden;
+	position: absolute;
+    bottom: 0; right: 0;
+	width: 580px;
+	padding: 50px;
+    box-sizing: border-box;
+	border-bottom: 1px solid #666;
+	line-height: 28px;
+	color: #fff;
+}
+.value .txt span {
+	display: block;
+	margin-bottom: 20px;
+}
+
+
+/*bottom-nav*/
+.bottom-nav {
+	width: 100%;
+	padding: 15px 0 40px;
+	background: #000;
+	border-bottom: 1px solid rgb(48,48,48);
+}
+.bottom-nav .inner {
+	width: 1200px;
+	margin: 0 auto;
+}
+.bottom-nav ul {
+	float: left;
+	width: 16.6666%;
+}
+.bottom-nav li {
+	color: #ccc;
+}
+
+.bottom-nav li span {
+	display: block;
+	margin: 25px 0;
+	font-weight: bold;
+	color: #fff;
+}
+
+
+/*footer*/
+footer {
+	position: relative;
+	background: #000;
+	width: 100%;
+	padding: 20px;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+footer address {
+	max-width: 1330px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+footer li {
+	float: left;
+	margin-top: 15px;
+	color: #fff;
+}
+footer li:first-child {width: 50%;}
+footer li:nth-child(2) {width: 25%;}
+footer li:nth-child(3) {width: 25%;}
+footer li span {
+	display: inline-block;
+	margin-right: 20px;
+	color: rgba(180, 180, 180, 0.76);
+	font-weight: bold;
+} 
+/*footer .copy {
+	position: absolute;
+	top: 10%;
+	left: 45%;
+}*/
+footer .txt {}
+/*footer .logo {
+	position: absolute;
+	right: 0;
+}*/
+footer .logo img {
+	float: left;
+}
+footer .logo p {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

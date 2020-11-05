@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HOME - 라이카 카메라 코리아</title>
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/leica.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/LEICA.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="top">
+			<div class="inner">
+				<div class="left">
+					<a href="#">REGISTER A PRODUCT</a>
+				</div>
+				<div class="right">
+					<ul>
+						<!--search-->
+						<li class="search-box">
+							<input type="text" id="search" name="serchItem" class="serch" placeholder="SEARCH" autocomplete="off">
+							<a href="#"><img src="img/ico_search_gr_12x12.png" alt="검색"></a>
+						</li>
+						<li class="languge">
+							<a href="#">한국어</a>
+						</li>
+						<li class="login">
+							<a href="#">LOGIN ACCOUNT</a>
+						</li>
+						<li class="estore">
+							<a href="#">ONLINE STORE</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<header class="cf">
+			<div class="inner">
+				<div class="logo">
+					<a href="leica.html"><img src="img/logo_leica_48x48.png" alt="LEICA 로고"></a>
+				</div>
+				<div class="gnb">
+					<ul>
+						<li class="title">
+							<a href="leica_info.html">LEICA CAMERA KOREA</a>
+							<ul class="sub-menu">
+								<li><a href="leica_info.html">회사소개</a></li>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">자주하는 질문(FAQ)</a></li>
+							</ul>
+						</li>
+						<li class="title">
+							<a href="leica_sub.html">AKADEMIE</a>
+							<ul class="sub-menu">
+								<li><a href="leica_sub.html">라이카 아카데미 소개</a></li>
+								<li><a href="#">아카데미 일정</a></li>
+							</ul>
+						</li>
+						<li class="title">
+							<a href="leica_news.html">CONTENTS</a>
+							<ul class="sub-menu">
+								<li><a href="leica_news.html">보도자료</a></li>
+								<li><a href="#">라이카 전시 일정</a></li>
+							</ul>
+						</li>
+						<li class="title"><a href="leica_store.html">STORE</a></li>
+						<li class="title"><a href="leica_log.html">CUSTOMER CARE</a>
+							<ul class="sub-menu">
+								<li><a href="leica_log.html">제품등록</a></li>
+								<li><a href="#">다운로드</a></li>
+								<li><a href="#">자료실</a></li>
+								<li><a href="leica_log.html">스토어 온·오프라인 상담 예약/조회</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="cart">
+					<a href="#"><img src="img/ico_cart_wt_18x18.png" alt="장바구니"> <span>0</span></a>
+				</div>
+			</div>
+		</header>
+		<!--//header-->
+
+
+		<!-- Slider main container -->
+		<div class="swiper-container first">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<a href="#"><img src="img/img_slide_01.jpg">
+						<div class="txt">
+							<p>SPECIAL OFFER <br>
+								Q2 / SL2 KIT</p>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/img_slide_02.jpg">
+						<div class="txt">
+							<p>4천만화소의 신제품 <br>
+								라이카 M 10-R 출시</p>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/img_slide_03.jpg">
+						<div class="txt">
+							<p>라이카 D-LUX 7 블랙, <br>
+								가장 먼저 온라인 스토어에서
+								만나보실 수 있습니다.</p>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/img_slide_04.jpg">
+						<div class="txt">
+							<p>LEICA Q2 <br>
+								ACCEPT NOTHING BUT PERFECTION</p>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/img_slide_05.jpg">
+						<div class="txt">
+							<p>LEICA M 10-P <br>
+								GO UNNOTICED IN THE STREET</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="slick-dots cf">
+			<ul>
+				<li class="active" onclick="firstSwiper.slideTo(0)"><a>SPECIAL OFFER <br>
+						Q2 / SL2 KIT</a></li>
+				<li onclick="firstSwiper.slideTo(1)"><a>4천만화소의 신제품 <br>
+						라이카 M 10-R 출시</a></li>
+				<li onclick="firstSwiper.slideTo(2)"><a>라이카 D-LUX 7 블랙, <br>
+						가장 먼저 온라인 스토어에서 </a></li>
+				<li onclick="firstSwiper.slideTo(3)"><a>LEICA Q2 <br>
+						ACCEPT NOTHING BUT</a></li>
+				<li onclick="firstSwiper.slideTo(4)"><a>LEICA M 10-P <br>
+						GO UNNOTICED IN THE</a></li>
+			</ul>
+		</div>
+		<!--//swiper-->
+
+
+		<div class="main">
+			<div class="main-banner01">
+				<a href="#">
+					<div class="img-box">
+						<img src="img/img_sale_main_sub_open_200919_d.jpg" alt="LEICA PROMOTION">
+					</div>
+					<div class="txt">
+						<span>LEICA PROMOTION</span>
+						<P>SPECIAL OFFER, SPECIAL PRICE <br>D-LUX (TYP109)</P>
+					</div>
+				</a>
+			</div>
+			<div class="main-imgArea">
+				<div class="main-banner02">
+					<a href="#">
+						<div class="img-box">
+							<img src="img/img_main_sub_01_exhibition_620x820_d.jpg" alt="임인식 사진전">
+						</div>
+						<div class="txt">
+							<span>Leica Exhibition</span>
+							<p>Life goes on <br> 임인식 사진전</p>
+						</div>
+					</a>
+				</div>
+				<div class="main-banner-box">
+					<div class="main-banner03">
+						<a href="#">
+							<div class="img-box">
+								<img src="img/img_main_banner03.jpg" alt="Leica Q2">
+							</div>
+							<div class="txt">
+								<span>Leica Q2</span>
+								<p>한치의 오차도 없는 완벽함</p>
+							</div>
+						</a>
+					</div>
+					<div class="main-banner04">
+						<a href="#">
+							<div class="img-box">
+								<img src="img/img_main_banner_O.jpg" alt="LOBA 2020 사진상">
+							</div>
+							<div class="txt">
+								<span>라이카 오스카 바르낙 어워드 2020</span>
+								<p>LOBA 2020 사진상 <br>성남훈의 Red Island</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//main-->
+
+
+		<!-- Swiper -->
+		<div class="swiper-container second">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="slide-box">
+						<a href="#">
+							<div class="img-box">
+								<img src="img/img_item01.jpg">
+							</div>
+							<div class="txt">
+								<p><span>Leica M10-R</span><br>
+									4천만 화소의 신제품, 이미지 품질 재정의</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="slide-box">
+						<a href="#">
+							<div class="img-box">
+								<img src="img/img_item02.jpg">
+							</div>
+							<div class="txt">
+								<p><span>Leica SL</span> <br>
+									단 한순간도 놓치지 마세요</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="slide-box">
+						<a href="#">
+							<div class="img-box">
+								<img src="img/img_item03.jpg">
+							</div>
+							<div class="txt">
+								<p><span>Leica M10-P </span><br>
+									눈에 띄지 않게 조용하다</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="slide-box">
+						<a href="#">
+							<div class="img-box">
+								<img src="img/img_item04.jpg">
+							</div>
+							<div class="txt">
+								<p><span>Leica Q2 </span><br>
+									한치의 오차도 없는 완벽함</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="slide-box">
+						<a href="#">
+							<div class="img-box">
+								<img src="img/img_item05.jpg">
+							</div>
+							<div class="txt">
+								<p><span>Leica CL</span> <br>
+									꿈은 크게, 짐은 가볍게</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="slide-box">
+						<a href="#">
+							<div class="img-box">
+								<img src="img/img_item06.jpg">
+							</div>
+							<div class="txt">
+								<p><span>Leica Q-P</span> <br>
+									절제의 미학, 미니멀한 디자인</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="slide-box">
+						<a href="#">
+							<div class="img-box">
+								<img src="img/img_item07.jpg">
+							</div>
+							<div class="txt">
+								<p><span>Leica SL2</span> <br>
+									오직 촬영에만 집중하다</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="slide-box">
+						<a href="#">
+							<div class="img-box">
+								<img src="img/img_item08.jpg">
+							</div>
+							<div class="txt">
+								<p><span>Leica Compact</span> <br>
+									작지만 엄청난 성능</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//swiper-->
+
+
+		<div class="akademie cf">
+			<div class="container">
+				<div class="akademie-header cf">
+					<h1>AKADEMIE SCHEDULE</h1>
+					<a href="#">About</a>
+				</div>
+				<div class="akademie-contents cf">
+					<div class="left">
+						<div class="img-box">
+							<img src="img/list_main.jpg" alt="라이카 살롱">
+						</div>
+						<div class="day">
+							<span>2020.10.20</span>
+							<p>라이카 스토어 청담</p>
+						</div>
+						<div class="apply">
+							<h2><a href="#">라이카 살롱 10월 신청</a></h2>
+						</div>
+					</div>
+					<div class="right cf">
+						<ul>
+							<li class="cf">
+								<p class="day">
+									Oct <br>09
+								</p>
+								<a href="#">
+									<div class="txt-box">
+										<p class="txt">
+											한글날 맞이 이야기가 있는 경주 출사
+										</p>
+										<span class="info">
+											2020.10.09 <br>경주 봉황대 앞 집결
+										</span>
+									</div>
+									<figure>
+										<img src="img/list_1.jpg" alt="한글날 경주 출사">
+									</figure>
+								</a>
+							</li>
+							<li class="cf">
+								<a href="#">
+									<p class="day">
+										Oct <br>28
+									</p>
+									<div class="txt-box">
+										<p class="txt">
+											Quality of Q - <br> 더 잘 쓰는 Q &amp; Q2 (10월)
+										</p>
+										<span class="info">
+											2020.10.28 <br>라이카 스토어 청담
+										</span>
+									</div>
+									<figure>
+										<img src="img/list_2.jpg" alt="Q & Q2 강의">
+									</figure>
+								</a>
+							</li>
+
+							<li class="cf">
+								<a href="#">
+									<p class="day">
+										Oct <br>29
+									</p>
+									<div class="txt-box">
+										<p class="txt">
+											풍경사진 <br> 라이트룸 클래식 <br> 활용 방법 (10월)
+										</p>
+										<span class="info">
+											2020.10.29 <br>라이카 역삼 아카데미룸
+										</span>
+									</div>
+									<figure>
+										<img src="img/list_3.jpg" alt="라이트룸 클래식">
+									</figure>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//akademie-->
+
+
+		<div class="exhibition">
+			<div class="container">
+				<h1>LEICA EXHIBITION</h1>
+				<div class="contents-box">
+					<a href="#">
+						<div class="img-box">
+							<img src="img/exhibition01.jpg" alt="EXHIBITION">
+						</div>
+						<p>Life goes on 임인식 사진전</p>
+						<span>전시일시 2020.08.12 ~ 2020.10.04 라이카 스토어 청담</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--//echibition-->
+
+
+		<div class="bottom-nav">
+			<div class="inner cf">
+				<ul>
+					<li><span>LEICA CAMERA KOREA</span></li>
+					<li><a href="#">회사소개</a></li>
+					<li><span>LEGAL</span></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+				</ul>
+				<ul>
+					<li><span>LEICA CAMERA KOREA</span></li>
+					<li><a href="#">ALL Products</a></li>
+					<li><a href="#">LEGAL</a></li>
+					<li><a href="#">Leica SL</a></li>
+					<li><a href="#">Leica Q</a></li>
+					<li><a href="#">CL and TL2</a></li>
+					<li><a href="#">Compacts</a></li>
+					<li><a href="#">Sofort</a></li>
+				</ul>
+				<ul>
+					<li><span>AKADEMIE</span></li>
+					<li><a href="#">라이카 아카데미 소개</a></li>
+					<li><a href="#">아카데미 일정</a></li>
+					<li><span>CUSTOMER SERVICE</span></li>
+					<li><a href="#">공지사항</a></li>
+					<li><a href="#">자주하는 질문(FAQ)</a></li>
+					<li><a href="#">배송 및 교환 정책</a></li>
+					<li><a href="#">1:1문의</a></li>
+					<li><a href="#">매장안내</a></li>
+				</ul>
+				<ul>
+					<li><span>CONTENTS</span></li>
+					<li><a href="#">보도자료</a></li>
+					<li><a href="#">라이카 전시 일정</a></li>
+					<li><span>CUSTOMER CARE</span></li>
+					<li><a href="#">제품등록</a></li>
+					<li><a href="#">다운로드</a></li>
+					<li><a href="#">자료실</a></li>
+				</ul>
+				<ul>
+					<li><span>LOGIN / SIGN UP</span></li>
+					<li><a href="#">Login Account</a></li>
+					<li><a href="#">Sign Up</a></li>
+				</ul>
+				<ul>
+					<li><span>SOCIAL</span></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Instagram</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--//bottom-nav-->
+
+
+		<footer class="cf">
+			<address>
+				<ul>
+					<li class="txt">
+						라이카 카메라 코리아(주) 대표자 :<span>수닐카울</span> 전화번호: <span>1661-0405</span> 서울시 강남구 테헤란로 208 안제타워 2층 <br>
+						사업자등록번호 : <span>211-88-55103</span> 통신판매업 신고번호 : <span>제2016-서울강남-01819호</span>
+					</li>
+					<li class="copy"><span>Copyright © 2020 Leica Camera Korea Ltd.</span></li>
+					<li class="logo">
+						<a href="#">
+							<img src="img/logo_leica_48x48.png" alt="logo">
+							<p>DAS WESENTLICHE</p>
+						</a>
+					</li>
+				</ul>
+			</address>
+		</footer>
+	</div>
+</body></html>
